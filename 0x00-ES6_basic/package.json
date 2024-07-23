@@ -1,10 +1,10 @@
 {
     "scripts": {
-        "lint": "./node_modules/.bin/eslint",
+        "lint": "eslint",
         "check-lint": "lint [0-9]*.js",
         "dev": "npx babel-node",
         "test": "jest",
-        "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+        "full-test": "eslint [0-9]*.js && jest"
     },
     "devDependencies": {
         "@babel/core": "^7.6.0",
@@ -18,5 +18,10 @@
     },
     "dependencies": {
         "babel": "^6.23.0"
-    }
+    },
+    "name": "0x00-es6_basic",
+    "version": "1.0.0",
+    "description": "We are expected to learn the basics of ECMAScript6 - ECMAScript 2015. Specifically, we should understand:\r - New features introduced in ES6\r - The difference between a constant and a variable\r - Block-scoped variables\r - Arrow functions and function parameters and their defaults\r - Rest and spread function parameters\r - String templating\r - Object creation and their properties\r - Iterators and for-of loops",
+    "author": "Benard Kiplangat",
+    "license": "ISC"
 }

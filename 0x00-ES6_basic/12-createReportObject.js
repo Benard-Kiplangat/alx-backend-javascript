@@ -1,10 +1,8 @@
-import createEmployeesObject from './11-createEmployeesObject'
-
 export default function createReportObject(employeesList) {
-  const allEmployeesObj = {
+  return {
     allEmployees: employeesList,
-    getNumberOfDepartments: (departments) => Object.getOwnPropertyNames(departments).length,
-  }
-
-  return allEmployeesObj
+    getNumberOfDepartments(employeesList) {
+      return Object.keys(employeesList).length;
+    },
+  };
 }
