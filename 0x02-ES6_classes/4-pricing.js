@@ -7,7 +7,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${amount} ${currency.name} ${currency.code}`;
+    return `${this.amount} ${this.currency.name} ${this.currency.code}`;
   }
 
   get amount() {
